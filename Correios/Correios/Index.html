@@ -2,10 +2,73 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Teste</title>
+    <title>Calculo de entrega</title>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/css/style.css" rel="stylesheet" />
 </head>
-<body>
+<body >
+    <div >
+        <h1 class="text-center"><b><u>Calculo de Entrega</u></b></h1>
+    </div>
+
+    <div class="container ">
+
+        <form action="" method="POST" name="formulario">
+
+            <div class="form-group">
+                <div class="   col-md-6 offset-md-3">
+                    <label> Cep Destinatário:</label>
+                    <input type="text" name="cepDest" class="form-control "  Usuário ou E-MAIL" required="">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-6 offset-md-3">
+                    <label> Cep Remetente: </label>
+                    <input type="text" name="cepReme" class="form-control"  required="">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-6 offset-md-3">
+                    <label> Peso: </label>
+                    <input type="text" name="peso" class="form-control"  required="">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-6 offset-md-3">
+                    <label> Formato: </label>
+                    <input type="text" name="Formato" class="form-control"  required="">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-6 offset-md-3">
+                    <label> Largura: </label>
+                    <input type="text" name="Largura" class="form-control"  required="">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-6 offset-md-3">
+                    <label> Altura </label>
+                    <input type="text" name="Altura" class="form-control"  required="">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-6 offset-md-3">
+                    <label> Diametro </label>
+                    <input type="text" name="Diametro" class="form-control"  required="">
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <div class="col-md-6 offset-md-3">
+                    <button class="btn btn-lg btn-primary btn-block" name="BotaoCalc" type="submit">Calcular</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/jquery-3.0.0.min.js"></script>
     <script src="Scripts/inputmask/min/inputmask.min.js"></script>
