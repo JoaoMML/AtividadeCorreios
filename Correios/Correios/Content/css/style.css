@@ -1,4 +1,15 @@
 ﻿body {
-background-color: aqua;
+    background-image: url('https://superatualizado.com.br/wp-content/uploads/2018/05/como-logistica-de-transporte-e-distribuicao-ajuda-seu-negocio.jpg');
+    background-size:cover
+}
+h1{
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black
 }
 
+label {
+    color: white;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: black;
+}
