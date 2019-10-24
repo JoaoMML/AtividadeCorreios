@@ -11,18 +11,15 @@
             nVlAltura: $("#altura").val(),
             nVlLargura: $("#largura").val(),
             sCdMaoPropria: "",
-            nVlValorDeclarado:"",
-            sCdAvisoRecebimento:"",
-            nCdServico:"",
+            nVlValorDeclarado: "",
+            sCdAvisoRecebimento: "",
+            nCdServico: "",
             nVlDiametro: $("#diametro").val()
         };
 
-        $.post("http://usysweb.com.br/api/correiosambev.php?text", obj, function (data) {
-            alert(JSON.parse(data).cServico.Valor);
-            alert(JSON.parse(data).cServico.PrazoEntrega);
-
-            //alert("#valor").text("R$ " + JSON.parse(data).cServico.Valor);
-            //alert("#prazo").text(JSON.parse(data).cServico.PrazoEntrega + " Dias");
+        $.post("http://usysweb.com.br/api/correiosambev.php?text", obj).done(function (data) {
+            $("#valor").text("R$ " + JSON.parse(data).cServico.Valor);
+            $("#dias").text(JSON.parse(data).cServico.PrazoEntrega + " Dias");
         });
     });
 });
